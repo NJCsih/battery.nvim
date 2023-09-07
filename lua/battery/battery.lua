@@ -13,7 +13,7 @@ local config = require("battery.config")
 local log = L.new({ plugin = "battery" })
 
 -- https://www.nerdfonts.com/cheat-sheet
-local no_battery_icon = "" -- "ﲾ"
+local no_battery_icon = "󱟨"
 local charging_battery_icons = {
 	{ "󰢜", 10 },
 	{ "󰂆", 20 },
@@ -160,7 +160,7 @@ end
 
 local function get_status_line()
   if battery_status.battery_count == nil then
-    return ""
+    return "Zero batteries found"
   else
     if battery_status.battery_count == 0 then
       if config.current.show_status_when_no_battery == true then
