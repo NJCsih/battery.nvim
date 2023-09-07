@@ -160,7 +160,7 @@ end
 
 local function get_status_line()
   if battery_status.battery_count == nil then
-    return "Zero batteries found"
+    return "󰂑"
   else
     if battery_status.battery_count == 0 then
       if config.current.show_status_when_no_battery == true then
