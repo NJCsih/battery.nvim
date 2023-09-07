@@ -14,15 +14,18 @@ local log = L.new({ plugin = "battery" })
 
 -- https://www.nerdfonts.com/cheat-sheet
 local no_battery_icon = "" -- "ﲾ"
--- local charging_battery_icons = {
---   { "", 20 },
---   { "", 30 },
---   { "", 40 },
---   { "", 60 },
---   { "", 80 },
---   { "", 90 },
---   { "", 100 },
--- }
+local charging_battery_icons = {
+	{ "󰢜", 10 },
+	{ "󰂆", 20 },
+	{ "󰂇", 30 },
+	{ "󰂈", 40 },
+	{ "󰢝", 50 },
+	{ "󰂉", 60 },
+	{ "󰢞", 70 },
+	{ "󰂊", 80 },
+	{ "󰂋", 90 },
+	{ "󱊦", 100 },
+}
 
 local horizontal_battery_icons = {
   { "", 5 },
@@ -35,16 +38,16 @@ local horizontal_battery_icons = {
 local plugged_icon = "ﮣ"
 local unplugged_icon = "ﮤ"
 local discharging_battery_icons = {
-  { "", 10 },
-  { "", 20 },
-  { "", 30 },
-  { "", 40 },
-  { "", 50 },
-  { "", 60 },
-  { "", 70 },
-  { "", 80 },
-  { "", 90 },
-  { "", 100 },
+  { "󰁺", 10 },
+  { "󰁻", 20 },
+  { "󰁼", 30 },
+  { "󰁽", 40 },
+  { "󰁾", 50 },
+  { "󰁿", 60 },
+  { "󰂀", 70 },
+  { "󰂁", 80 },
+  { "󰂂", 90 },
+  { "󰁹", 100 },
 }
 
 -- TODO maybe store the update time here?
